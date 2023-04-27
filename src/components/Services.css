@@ -1,0 +1,127 @@
+.bg-shape {
+    position: absolute;
+    width: 400px;
+    transform: rotate(-25deg);
+    left: -200px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.services-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.services-text {
+    width: 50%;
+    padding: 30px;
+}
+
+.services-text * {
+    padding-bottom: 10px;
+}
+
+.services-text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #6c757d;
+}
+
+.services-text h1,
+.services-text h3 {
+    color: var(--dark-purple);
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(68, 0, 68, 0.254);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service-icon1 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(147, 1, 86, 0.375);
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+
+
+.service-icon1 i , .service-icon i {
+    margin: auto;
+    padding: 0;
+}
+
+
+.services-text .cols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    gap: 100px;
+}
+
+.service-images {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service1 {
+    position: absolute;
+    width: 720px;
+    right: -220px;
+}
+
+.service2 {
+    position: absolute;
+    width: 270px;
+    right: 350px;
+    top: 1240px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .services-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .services-text{
+        width: 100%;
+    }
+
+    .service-images {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .service1 {
+        position: static;
+        width: 100%;
+        right: -220px;
+    }
+    
+    .service2 {
+        position: static;
+        width: 50%;
+       margin-left: -200px;
+    }
+}

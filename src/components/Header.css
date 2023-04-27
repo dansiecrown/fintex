@@ -1,0 +1,129 @@
+.Header{
+    min-width: 100%;
+}
+
+.Header-web{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.Header-web *{
+    margin: auto 0;
+}
+
+.Header-menu a{
+    padding: 10px;
+    text-decoration: none;
+    color: grey;
+}
+
+.Header-menu a:hover{
+    color: white ;
+}
+
+
+.Header-web .download {
+    padding: 10px 30px;
+    font-size: 1em;   
+    border: none;
+    border-radius: 50px;
+    color: var(--dark-purple);
+}
+
+.Header-web .download:hover{
+    background: var(--gradient);
+    color: white;
+    cursor: pointer;
+}
+
+.Ham{
+    display: none;
+}
+
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    background-color: var(--dark-purple);
+    z-index: 100;
+    top: 0;
+    right: 0;
+    padding: 80px;
+    padding-top: 100px;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    text-align: right;
+
+}
+
+.close{
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-align: right;
+    font-size: 2em;
+}
+
+.close:hover{
+    color: purple;
+    cursor: pointer;
+}
+
+
+.mobile-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.mobile-menu a:hover{
+    color: purple;
+}
+
+
+
+@media  screen and (max-width: 1000px) {
+
+    .Header-menu{
+        display: none;
+    }
+
+
+    .Ham{
+        display: block;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 2em;
+    }
+    
+    .Ham:hover{
+        color: purple;
+        cursor: pointer;
+    }
+
+    
+    .download{
+        display: none;
+
+    }
+
+    .mDownload {
+        padding: 10px 50px;
+        font-size: 1em;   
+        border: none;
+        border-radius: 50px;
+        color: var(--dark-purple);
+        margin-left: auto;
+    }
+    
+    .mDownload:hover{
+        background: var(--gradient);
+        color: white;
+        cursor: pointer;
+    }
+}

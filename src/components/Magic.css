@@ -1,0 +1,246 @@
+ .Magic{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 0, 36);
+    color: var(--white);
+    padding-top: 100px;
+ }
+
+ .Magic-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 50px;
+ }
+
+ .Magic-top h1{
+    font-size: 2em;
+    line-height: 45px;
+ }
+
+ .Magic-top p{
+    color: rgb(148, 117, 148);
+ }
+
+.Magic-top-right{
+    text-align: right;
+}
+
+ .Magic-top button{
+    background: var(--gradient);
+    color: var(--white);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-top: 20px;
+    font-size: 1.2em;
+ }
+
+ .Magic-top button:hover{
+    background: var(--white);
+    color: var(--dark-purple);
+    cursor: pointer;
+ }
+
+ .Magic-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+ }
+
+ .Magic-card{
+    padding: 30px;
+    background: var(--dark-purple);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    
+ }
+
+ 
+
+ .Magic-card-icon{
+    width: 50px;
+    height: 50px;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .Magic-card h3{
+    margin-top: 20px;
+    padding-bottom: 10px;
+ }
+
+ .Magic-card p{
+    color: rgb(148, 117, 148);
+    line-height: 30px;
+ }
+
+ .Magic-card button{
+    background: #120d23;
+    color: var(--white);
+    padding: 20px 30px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 1em;
+    width: 100%;
+ }
+
+ .Magic-card button:hover{
+    background: var(--white);
+    color: var(--dark-purple);
+    cursor: pointer;
+ }
+
+
+ .Newsletter{
+    margin-top: 100px;
+    padding: 30px;
+    background: var(--gradient);
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+ }
+
+ .newsletter-icon{
+    width: 50px;
+    height: 50px;
+    background: var(--dark-purple);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+ }
+
+ .newsletter-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    width: 40%;
+ }
+
+ .newsletter-input{
+    width: 38%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid var(--white);
+ }
+
+ .newsletter-input input{
+    width: 80%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+    height: 80%;
+    font-family: "poppins";
+    margin: auto 0;
+ }
+
+ .newsletter-input input::placeholder{
+    color: var(--white);
+    font-family: "poppins";
+    font-size: 1.5em;
+    font-weight: 200;
+ }
+
+    .newsletter-input button{
+        background: var(--white);
+        color: var(--dark-purple);
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        /* margin-right: -30px; */
+    }
+
+    .newsletter-input button:hover{
+        background: var(--dark-purple);
+        color: var(--white);
+        cursor: pointer;
+    }
+ 
+
+    @media screen and (max-width: 1000px) {
+  
+     
+      .Magic-top{
+         flex-direction: column;
+      }
+     
+
+     
+      .Magic-cards{
+         display: block;
+         margin: auto;
+         text-align: center;
+      }
+     
+      .Magic-card{
+         width: 300px;
+         display: inline-table;
+         margin: 10px;
+
+         text-align: left;
+         
+      }
+     
+    
+     
+      .Newsletter{
+         margin-top: 100px;
+         padding: 30px;
+         background: var(--gradient);
+         width: 100%;
+         border-radius: 20px;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: column;
+         gap: 30px;
+      }
+     
+      .newsletter-icon{
+         width: 50px;
+         height: 50px;
+         background: var(--dark-purple);
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: auto 0;
+      }
+     
+      .newsletter-text{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin-right: auto;
+         width: 100%;
+      }
+     
+      .newsletter-input{
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         border: none;
+         border-bottom: 1px solid var(--white);
+      }
+   
+      
+    }
