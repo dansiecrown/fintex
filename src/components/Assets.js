@@ -31,8 +31,6 @@ export default function Assets() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         </div>
 
-
-
                         <div className='col1-right'>
                             <img src='../assets/App-Block01.png' alt='card' />
                         </div>
